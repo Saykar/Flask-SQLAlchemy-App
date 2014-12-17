@@ -69,4 +69,12 @@ def edit_messages(id):
     resp = make_response()
     return resp
 
+@app.route('/messages/<id>', methods=['DELETE'])
+def delete_messages(id):
+    m = Messages.query.get(id)
+    db.session.delete(m)
+    db.session.commit()
+    resp = make_response()
+    return resp
+
 app.run(debug=True)
