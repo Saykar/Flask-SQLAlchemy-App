@@ -2,13 +2,15 @@ Flask-SQLAlchemy-App
 ====================
 Python application using Flask and SQLAlchemy. This application exposes GET, POST, PUT, DELETE APIs that talk to MySQL database.
 
-**How to start server:
+** How to start server:
+----------------------
 
 python app/message.py
 
 
 
-**Examples:
+** Examples:
+------------
 
 curl "http://127.0.0.1:5000/messages/3" 
 
